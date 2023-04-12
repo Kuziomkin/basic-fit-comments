@@ -9,11 +9,14 @@ from components.scatterchart import scatter_chart
 from components.linechart import line_chart
 from components.table import table
 from components.footer import footer
+import gunicorn     
 
 
 #run app
 app = Dash(__name__)
 
+# Reference the underlying flask app (Used by gunicorn webserver in Heroku production deployment)
+server = app.server 
 
 #html page
 app.layout = html.Div(
