@@ -55,3 +55,28 @@ def filter_data(df, city, address, period):
         & (df["Date"].dt.year <= period[1] + 2000)
         ]
     return df_filtered
+
+
+#filter adresses
+def filter_adresses(df, city, address):
+    if isinstance(city, str):
+        city_list = []
+        city_list.append(city)
+    elif city is None:
+        city_list = []
+    else:
+        city_list = city
+    if isinstance(address, str):
+        address_list = []
+        address_list.append(address)
+    elif address is None:
+        address_list = []
+    else:
+        address_list = address
+
+    #filter dataset
+    df_filtered = df.loc[
+        (df["City"].isin(city_list))
+        & (df["Address"].isin(address_list))
+        ]
+    return df_filtered

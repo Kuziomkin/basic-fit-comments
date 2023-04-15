@@ -13,7 +13,12 @@ import gunicorn
 
 
 #run app
-app = Dash(__name__)
+app = Dash(
+    __name__, 
+    meta_tags=[
+        {'name': 'viewport',
+         'content': 'width=device-width, initial-scale=1.0, maximum-scale=1.2, minimum-scale=0.5,'}]
+)
 
 # Reference the underlying flask app (Used by gunicorn webserver in Heroku production deployment)
 server = app.server 
@@ -44,4 +49,4 @@ app.layout = html.Div(
 
 
 if __name__ == "__main__":
-    app.run_server(debug=False, dev_tools_hot_reload=True)
+    app.run_server(debug=True)

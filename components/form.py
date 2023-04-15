@@ -2,6 +2,7 @@ from dash import html, dcc, Input, Output, callback, callback_context
 import pandas as pd
 from components.utils import create_dic, get_data
 from components.downloadbutton import button
+from .utils import filter_adresses
 
 
 #get data
@@ -222,3 +223,23 @@ def filter_forms(address_set, address_values, address_options, city_set, city_va
 
     return city_set, city_values, address_set, address_values, address_options
 
+
+#range slider handler
+#cards handler
+@callback(
+        Output("period-slicer", "value"),
+    [
+        Input("city-dropdown", "value"),
+        Input("address-dropdown", "value")
+    ]
+)
+def render_slider(city, address):
+    
+    #filter data
+    df_filtered = filter_adresses(df, city, address)
+    if df_filtered.empty:
+        value = [df["Date"].dt.year.unique().min() - 2000, df["Date"].dt.year.unique().max() - 2000]
+    else:
+        value = [df_filtered["Date"].dt.year.unique().min() - 2000, df_filtered["Date"].dt.year.unique().max() - 2000]
+
+    return value
