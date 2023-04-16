@@ -23,6 +23,7 @@ app = Dash(
 # Reference the underlying flask app (Used by gunicorn webserver in Heroku production deployment)
 server = app.server 
 
+
 #html page
 app.layout = html.Div(
     children=[
@@ -46,6 +47,7 @@ app.layout = html.Div(
         footer
     ]
 )
+
 
 
 if __name__ == "__main__":
