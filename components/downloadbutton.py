@@ -39,7 +39,7 @@ def func(n_clicks, city, address, period):
     df_filtered = filter_data(df, city, address, period)
     if n_clicks == 1:
         n_clicks = 0
-        return dcc.send_data_frame(df_filtered.to_csv, "mydf.csv"), n_clicks
+        return dcc.send_data_frame(df_filtered.to_csv, "dataset.csv"), n_clicks
     else:
         return None, n_clicks 
 
