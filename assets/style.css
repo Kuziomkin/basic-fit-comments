@@ -81,10 +81,10 @@ input[type='radio']:checked:after {
     width: 100px;
     height: 40px;
     border-style: double;
-    padding: 25px;
+    padding: 30px;
     font-size: 16px;
     text-align: center;
-    margin-left: 75px;
+    margin-left: 80px;
 }
 
 .avg-rating-card{
@@ -92,10 +92,10 @@ input[type='radio']:checked:after {
     width: 100px;
     height: 40px;
     border-style: double;
-    padding: 25px;
+    padding: 30px;
     font-size: 16px;
     text-align: center;
-    margin-left: 75px;
+    margin-left: 80px;
 }
 
 .pct-positive{
@@ -103,10 +103,10 @@ input[type='radio']:checked:after {
     width: 100px;
     height: 40px;
     border-style: double;
-    padding: 25px;
+    padding: 30px;
     font-size: 16px;
     text-align: center;
-    margin-left: 75px;
+    margin-left: 80px;
 }
 
 .pct-negative{
@@ -114,10 +114,10 @@ input[type='radio']:checked:after {
     width: 100px;
     height: 40px;
     border-style: double;
-    padding: 25px;
+    padding: 30px;
     font-size: 16px;
     text-align: center;
-    margin-left: 75px;
+    margin-left: 80px;
     
 }
 
@@ -133,9 +133,9 @@ input[type='radio']:checked:after {
 div[id='graph-bar'].dash-graph {
     position: relative;
     top: 75px;
-    left: 0px;
-    height: 500px;
-    width: 500px;
+    left: 10px;
+    height: 550px;
+    width: 550px;
 }
 
 /* Barchart style settings */
@@ -144,10 +144,10 @@ div[id='graph-bar'].dash-graph {
 
 div[id='graph-scatter'].dash-graph {
     position: relative;
-    top: -420px;
-    left: 450px;
-    width: 475px;
-    height: 420px;
+    top: -470px;
+    left: 480px;
+    width: 525px;
+    height: 450px;
 }
 
 /* Scatterchart style settings */
@@ -156,9 +156,9 @@ div[id='graph-scatter'].dash-graph {
 
 div[id='graph-line'].dash-graph {
     position: relative;
-    top: -325px;
-    left: 0px;
-    width: 925px;
+    top: -370px;
+    left: 10px;
+    width: 1025px;
     height: 420px;
 }
 
@@ -168,15 +168,15 @@ div[id='graph-line'].dash-graph {
 
 .table-div{
     position: relative;
-    top:-275px;
-    left:10px;
-    width: 900px;
+    top:-300px;
+    left:20px;
+    width: 1000px;
 }
 
 .table_tabs{
     position: relative;
-    top:-275px;
-    left:10px;
+    top:-300px;
+    left:20px;
     width: 600px;
     text-align: center;
     align-items: center;
