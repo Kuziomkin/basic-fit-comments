@@ -84,8 +84,6 @@ def render_linechart(city, address, period):
             size=14,
             color="black"
             ),
-        width=925,
-        height=420,
         plot_bgcolor='rgba(0,0,0,0)',
         xaxis = dict(
             showgrid = False,

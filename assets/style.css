@@ -134,6 +134,8 @@ div[id='graph-bar'].dash-graph {
     position: relative;
     top: 75px;
     left: 0px;
+    height: 500px;
+    width: 500px;
 }
 
 /* Barchart style settings */
@@ -144,6 +146,8 @@ div[id='graph-scatter'].dash-graph {
     position: relative;
     top: -420px;
     left: 450px;
+    width: 475px;
+    height: 420px;
 }
 
 /* Scatterchart style settings */
@@ -154,6 +158,8 @@ div[id='graph-line'].dash-graph {
     position: relative;
     top: -325px;
     left: 0px;
+    width: 925px;
+    height: 420px;
 }
 
 /* Linechart style settings */
@@ -179,3 +185,99 @@ div[id='graph-line'].dash-graph {
 /* Table style settings */
 /* ==================================================================== */
 
+
+/* ==================================================================== */
+                                /* 1920 x 1080 screen*/
+/* ==================================================================== */
+
+
+@media only screen and (min-width: 1920px) {
+    .total-review-card{
+        position: relative;
+        width: 100px;
+        height: 40px;
+        border-style: double;
+        padding: 45px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 150px;
+    }
+
+    .avg-rating-card{
+        position: relative;
+        width: 100px;
+        height: 40px;
+        border-style: double;
+        padding: 45px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 150px;
+    }
+    
+    .pct-positive{
+        position: relative;
+        width: 100px;
+        height: 40px;
+        border-style: double;
+        padding: 45px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 150px;
+    }
+    
+    .pct-negative{
+        position: relative;
+        width: 100px;
+        height: 40px;
+        border-style: double;
+        padding: 45px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 150px;
+        
+    }
+        /* Barchart style settings */
+
+    div[id='graph-bar'].dash-graph {
+        position: relative;
+        top: 75px;
+        left: 50px;
+        height: 700px;
+        width: 700px;
+    }
+
+    div[id='graph-scatter'].dash-graph {
+        position: relative;
+        top: -620px;
+        left: 750px;
+        width: 675px;
+        height: 620px;
+    }
+    div[id='graph-line'].dash-graph {
+        position: relative;
+        top: -525px;
+        left: 50px;
+        width: 1400px;
+        height: 620px;
+    }
+
+    .table-div{
+        position: relative;
+        top:-475px;
+        left:50px;
+        width: 1400px;
+    }
+    
+    .table_tabs{
+        position: relative;
+        top:-475px;
+        left:50px;
+        width: 600px;
+        text-align: center;
+        align-items: center;
+    }
+  }
+
+/* ==================================================================== */
+                                /* 1920 x 1080 screen*/
+/* ==================================================================== */

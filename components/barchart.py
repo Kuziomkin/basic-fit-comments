@@ -55,8 +55,6 @@ def render_barchart(city, address, period):
             size=14,
             color="black"
             ),
-        width=500,
-        height=500,
         plot_bgcolor='rgba(0,0,0,0)',
         xaxis = dict(
             showgrid = False,
