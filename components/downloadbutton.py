@@ -37,6 +37,7 @@ button = html.Div(
 def func(n_clicks, city, address, period):
     #filter data
     df_filtered = filter_data(df, city, address, period)
+    df_filtered = df_filtered.reset_index().drop(columns=["Unnamed: 0", "index"], axis=1)
     if n_clicks == 1:
         n_clicks = 0
         return dcc.send_data_frame(df_filtered.to_csv, "dataset.csv"), n_clicks
