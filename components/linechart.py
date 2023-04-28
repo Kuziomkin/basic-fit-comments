@@ -73,7 +73,7 @@ def render_linechart(city, address, period):
     #define layout
     layout_line_chart = go.Layout(
         title = dict(
-            text="<b>Comments Stars Ratioт Per Years<b>",
+            text="<b>Comments Stars Ratio Per Years<b>",
             x=0.5,
             y=0.92,
             xanchor= 'center',
