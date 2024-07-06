@@ -3,4 +3,5 @@ dash == 2.8.1
 Flask == 2.2.2
 numpy == 1.23.5
 plotly == 5.11.0
+Werkzeug == 2.2.2
 gunicorn
